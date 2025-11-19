@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Kontak — MODa POD</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">MODa POD</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Produk</a>
+        <a href="register.html">Daftar</a>
+        <a href="contact.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Hubungi Kami</h2>
+    <p>Gunakan formulir di bawah untuk pertanyaan produksi, kerjasama, atau masalah pesanan.</p>
+
+    <form id="contact-form" onsubmit="return handleContact(event)">
+      <label>Nama
+        <input type="text" name="name" required>
+      </label>
+
+      <label>Email
+        <input type="email" name="email" required>
+      </label>
+
+      <label>Subjek
+        <input type="text" name="subject" required>
+      </label>
+
+      <label>Pesan
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+
+      <button class="btn" type="submit">Kirim</button>
+    </form>
+    <div id="contact-result" class="result" aria-live="polite"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 MODa POD</p>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>

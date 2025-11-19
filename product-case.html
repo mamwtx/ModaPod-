@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mug Keramik — MODa POD</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">MODa POD</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Produk</a>
+        <a href="register.html">Daftar</a>
+        <a href="contact.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="product-detail">
+      <img src="images/case.png" alt="Case custom">
+      <div>
+        <h2>soft and hard case</h2>
+        <p>Rp45.000 — Case custom desain sesuai selera anda. Cocok untuk hadiah dan toko online.</p>
+        <form id="add-to-cart-mug" class="form-inline" onsubmit="return false;">
+          <label>Jumlah
+            <input type="number" name="qty" value="1" min="1">
+          </label>
+          <button class="btn" onclick="addToCart('Mug Keramik', 45000)">Tambahkan ke Keranjang</button>
+        </form>
+        <p class="note">Kirim desain lewat email setelah pemesanan.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 MODa POD</p>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kaos Custom — MODa POD</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">MODa POD</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Produk</a>
+        <a href="register.html">Daftar</a>
+        <a href="contact.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="product-detail">
+      <img src="images/image.png" alt="Kaos custom">
+      <div>
+        <h2>Kaos Custom — Cotton 180gsm</h2>
+        <p>Rp120.000 — Kaos berkualitas untuk cetak DTG / sablon. Bahan 100% katun, nyaman dipakai sehari-hari.</p>
+        <form id="add-to-cart" class="form-inline" onsubmit="return false;">
+          <label>Warna
+            <select name="color">
+              <option>Putih</option>
+              <option>Hitam</option>
+              <option>Abu</option>
+            </select>
+          </label>
+          <label>Ukuran
+            <select name="size">
+              <option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option>
+            </select>
+          </label>
+          <label>Jumlah
+            <input type="number" name="qty" value="1" min="1">
+          </label>
+          <button class="btn" onclick="addToCart('Kaos Custom', 120000)">Tambahkan ke Keranjang</button>
+        </form>
+        <p class="note">Unggah desain setelah checkout melalui email atau dashboard (fitur demo).</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 MODa POD</p>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>

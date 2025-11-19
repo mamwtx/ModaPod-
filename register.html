@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Daftar Member — MODa POD</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">MODa POD</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Produk</a>
+        <a href="register.html">Daftar</a>
+        <a href="contact.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Form Registrasi</h2>
+    <p>Daftar sebagai member untuk menyimpan desain, mendapatkan harga khusus, dan fitur pengiriman.</p>
+
+    <form id="register-form" onsubmit="return handleRegister(event)">
+      <label>Nama lengkap
+        <input type="text" name="fullname" required minlength="3">
+      </label>
+
+      <label>Email
+        <input type="email" name="email" required>
+      </label>
+
+      <label>Nama user (opsional)
+        <input type="text" name="shop">
+      </label>
+
+      <label>Kata sandi
+        <input type="password" name="password" required minlength="6">
+      </label>
+
+      <button class="btn" type="submit">Daftar</button>
+    </form>
+    <div id="register-result" class="result" aria-live="polite"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 MODa POD</p>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
